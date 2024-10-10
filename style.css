@@ -64,6 +64,10 @@ main {
   cursor: pointer;
 }
 
+#cart-button:focus svg {
+  outline: auto;
+}
+
 .carousel-arrows {
   display: none;
   fill: #6870AE;
