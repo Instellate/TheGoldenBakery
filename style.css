@@ -34,3 +34,41 @@ h1 {
 #cart-related {
   position: relative;
 }
+
+#navbar svg {
+  fill: #D1D6F9;
+}
+
+#navbar button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+#cart-button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .carousel>img {
+    flex-grow: 0;
+    margin-top: 3rem;
+    width: 458px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    filter: brightness(100%)
+  }
+
+  .carousel-arrows {
+    display: block;
+  }
+}
