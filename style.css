@@ -199,3 +199,12 @@ main {
 .cart-item>span {
   white-space: nowrap;
 }
+
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 0.5rem;
+}
