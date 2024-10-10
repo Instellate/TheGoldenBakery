@@ -16,6 +16,17 @@ h1 {
   margin: 0;
 }
 
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363B5F;
+  color: #D1D6F9;
+  padding: 8px;
+  grid-area: nav;
+  height: fit-content;
+}
+
 #links {
   display: flex;
   gap: 1rem;
@@ -29,6 +40,10 @@ h1 {
 
 #links>a:hover {
   text-decoration: underline;
+}
+
+main {
+  grid-area: main;
 }
 
 #cart-related {
@@ -49,28 +64,16 @@ h1 {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
-  .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
+.carousel-arrows {
+  display: none;
+  fill: #6870AE;
+}
 
-  .carousel>img {
-    flex-grow: 0;
-    margin-top: 3rem;
-    width: 458px;
-    height: 176px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    filter: brightness(100%)
-  }
-
-  .carousel-arrows {
-    display: block;
-  }
+.carousel>img {
+  height: 172px;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(60%)
 }
 
 .button {
@@ -121,6 +124,48 @@ h1 {
   object-fit: scale-down;
 }
 
+.footer {
+  margin-top: auto;
+  background-color: #152229;
+  color: white;
+  padding: 12px;
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .carousel>img {
+    flex-grow: 0;
+    margin-top: 3rem;
+    width: 458px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    filter: brightness(100%)
+  }
+
+  .carousel-arrows {
+    display: block;
+  }
+}
+
+.mobile-none {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .mobile-none {
+    display: inline;
+  }
+}
+
 #cart {
   position: absolute;
   top: 48px;
@@ -153,22 +198,4 @@ h1 {
 
 .cart-item>span {
   white-space: nowrap;
-}
-
-.mobile-none {
-  display: none;
-}
-
-@media only screen and (min-width: 640px) {
-  .mobile-none {
-    display: inline;
-  }
-}
-
-.footer {
-  margin-top: auto;
-  background-color: #152229;
-  color: white;
-  padding: 12px;
-  grid-area: footer;
 }
