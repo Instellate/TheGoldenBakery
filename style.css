@@ -72,3 +72,51 @@ h1 {
     display: block;
   }
 }
+
+.button {
+  background-color: #0B79FA;
+  border: none;
+  color: #FFFFFF;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(76, 147, 228);
+}
+
+.items {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 24px;
+  align-items: center;
+}
+
+.item {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid black;
+  width: 224px;
+  text-align: center;
+}
+
+.item>.item-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.item>img {
+  width: 124px;
+  height: 92px;
+  object-fit: scale-down;
+}
