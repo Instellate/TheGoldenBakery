@@ -154,3 +154,21 @@ h1 {
 .cart-item>span {
   white-space: nowrap;
 }
+
+.mobile-none {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .mobile-none {
+    display: inline;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #152229;
+  color: white;
+  padding: 12px;
+  grid-area: footer;
+}
