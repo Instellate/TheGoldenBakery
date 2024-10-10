@@ -212,3 +212,7 @@ main {
   margin: 1rem;
   gap: 0.5rem;
 }
+
+#search > strong {
+  font-size: 18px;
+}
