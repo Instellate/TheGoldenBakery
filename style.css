@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  height: 100vh;
+}
+
+h1 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+#links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#links>a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#links>a:hover {
+  text-decoration: underline;
+}
+
+#cart-related {
+  position: relative;
+}
